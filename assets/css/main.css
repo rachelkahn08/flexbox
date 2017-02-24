@@ -39,6 +39,10 @@ nav a {
 	width: 12.5%;
 	height: 100%;
 	background: #202529;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .hamburger-bar {
