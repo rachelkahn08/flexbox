@@ -229,14 +229,6 @@ p {
 		font-size: 1em;
 		margin-top: 37.5px;
 	}
-	
-	.navigation-menu-open {
-		top: 74px;
-	}
-
-	li {
-		font-size: 2em;
-	}
 
 	.hamburger { /*82px*/
 		width: 12.8125%;
@@ -300,6 +292,10 @@ p {
 }
 
 @media (min-width: 980px) {
+	.navigation-menu {
+		display: flex;
+	}
+
 	nav {
 		height: 97px;
 	}

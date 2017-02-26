@@ -14,6 +14,7 @@ function openNavigation() {
 		console.log(hamburgerWidth);
 
 	if (!menu.classList.contains("navigation-menu-open")) {
+		
 
 		TweenMax.to(".hamburger-bar:first-child",
 					.5,
