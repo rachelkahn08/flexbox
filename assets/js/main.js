@@ -4,6 +4,10 @@ hamburger = document.querySelector(".hamburger");
 hamburger.addEventListener("click", openNavigation)
 
 function openNavigation() {
+	navBar = document.querySelector("nav");
+	navBarHeight = navBar.offsetHeight;
+
+
 	menu = document.querySelector(".navigation-menu");
 
 	hamburgerBar = document.querySelector(".hamburger-bar:first-child");
@@ -13,9 +17,10 @@ function openNavigation() {
 	hamburgerWidth = hamburgerBar.style.width;
 		console.log(hamburgerWidth);
 
+
 	if (!menu.classList.contains("navigation-menu-open")) {
 		
-
+		menu.style.top = navBarHeight + "px";
 		TweenMax.to(".hamburger-bar:first-child",
 					.5,
 					{
@@ -38,6 +43,7 @@ function openNavigation() {
 					}
 				);
 		menu.classList.add("navigation-menu-open");
+		
 		TweenMax.fromTo(".navigation-menu-open",
 					1,
 					{	
