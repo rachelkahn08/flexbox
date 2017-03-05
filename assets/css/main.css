@@ -322,8 +322,13 @@ p {
 		display: none;
 	}
 
-	.navigation-menu {
+	.navigation-menu,
+	.navigation-menu-open  {
+		border: none;
+		background: #373c3f;
+		position: initial;
 		display: flex;
+		flex-direction: row;
 		flex-wrap: wrap;
 		width: 100%;
 		padding: 20px;
